@@ -1,250 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>REDMAGIC 11 Air 1TB Giveaway</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MWB | MgaWalangBitaw</title>
+    <link rel="stylesheet" href="style.css">
+    <base target="_blank">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<base target="_blank">
 </head>
-<body class="bg-zinc-950 text-white overflow-x-hidden">
-
-  <!-- Professional Minimalist Navbar -->
-  <nav class="bg-black/95 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-8 py-6">
-      <div class="flex justify-between items-center">
-        <div class="flex items-center gap-4">
-          <div class="w-9 h-9 bg-gradient-to-br from-zinc-200 to-zinc-400 rounded-2xl flex items-center justify-center text-black font-bold text-2xl shadow-md">
-            R
-          </div>
-          <div>
-            <h1 class="text-2xl font-semibold tracking-tighter">MgaWalangBitaw</h1>
-            <p class="text-[10px] text-zinc-500 tracking-widest">GIVEAWAY 2026</p>
-          </div>
+<body>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition">
+        <div class="transition-logo">
+            <span class="t-letter">M</span>
+            <span class="t-letter">W</span>
+            <span class="t-letter">B</span>
         </div>
-
-        <div class="hidden md:flex items-center gap-10 text-sm font-medium text-zinc-400">
-          <a href="#home" class="nav-link">HOME</a>
-          <a href="#event" class="nav-link">THE EVENT</a>
-          <a href="#how-to-join-event" class="nav-link">JOIN EVENT</a>
-          <a href="#how-to-join-clan" class="nav-link">JOIN CLAN</a>
-        </div>
-
-        <a href="#how-to-join-clan" 
-           class="px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-400 rounded-2xl text-sm font-semibold transition-all duration-300 flex items-center gap-2">
-          JOIN ON TIKTOK
-          <i class="fa-brands fa-tiktok"></i>
-        </a>
-      </div>
+        <div class="transition-line"></div>
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="min-h-screen bg-gradient-to-br from-zinc-950 via-black to-zinc-950 flex items-center relative">
-    <div class="max-w-7xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-16 items-center">
-      <div class="space-y-10">
-        <div class="inline-flex items-center gap-3 px-6 py-2 bg-zinc-900 border border-zinc-700 rounded-full text-sm font-medium text-zinc-400">
-          <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-          LIMITED TIME GIVEAWAY
-        </div>
+    <!-- Military Grid Background -->
+    <div class="military-grid"></div>
 
-        <h1 class="text-6xl md:text-7xl font-black leading-none tracking-tighter neon-red">
-          WIN THE<br>REDMAGIC 11 AIR 1TB
-        </h1>
+    <!-- Scanline Overlay -->
+    <div class="scanlines"></div>
 
-        <p class="text-2xl text-zinc-400 max-w-lg">
-          Experience next-level gaming performance with the most advanced gaming smartphone.
-        </p>
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
 
-        <div class="flex flex-wrap gap-12">
-          <div>
-            <p class="uppercase text-xs tracking-widest text-zinc-500">Grand Prize</p>
-            <p class="text-4xl font-semibold mt-1">REDMAGIC 11 Air 1TB</p>
-          </div>
-          <div>
-            <p class="uppercase text-xs tracking-widest text-zinc-500">Consolation</p>
-            <p class="text-4xl font-semibold text-yellow-400 mt-1">₱10,000 CASH</p>
-            <p class="text-sm text-zinc-500">3 Winners</p>
-          </div>
-        </div>
-
-        <a href="#how-to-join-event" 
-           class="inline-flex items-center gap-3 bg-white text-black px-10 py-5 rounded-2xl font-semibold text-lg hover:bg-zinc-200 transition-all hover:scale-105">
-          HOW TO JOIN THE EVENT
-          <span class="text-xl">→</span>
-        </a>
-      </div>
-
-      <div class="flex justify-center perspective">
-        <div class="phone-container">
-          <img src="RedMagic11air.webp" 
-               alt="REDMAGIC 11 Air 1TB" 
-               class="phone-img w-full max-w-lg rounded-3xl shadow-2xl border border-zinc-800">
-        </div>
-      </div>
+    <!-- Tactical HUD Overlay -->
+    <div class="hud-overlay">
+        <div class="hud-corner hud-tl"></div>
+        <div class="hud-corner hud-tr"></div>
+        <div class="hud-corner hud-bl"></div>
+        <div class="hud-corner hud-br"></div>
+        <div class="hud-crosshair"></div>
     </div>
-  </section>
 
-  <!-- The Event -->
-  <section id="event" class="py-28 bg-black">
-    <div class="max-w-4xl mx-auto px-8 text-center">
-      <h2 class="text-5xl font-semibold tracking-tight mb-6">THE EVENT</h2>
-      <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
-        A premium gaming phone giveaway presented by Erielle Bancolita and MAMCI. 
-        One ultimate winner and three cash prize recipients.
-      </p>
-    </div>
-  </section>
-
-  <!-- How to Join Event -->
-  <section id="how-to-join-event" class="py-28 bg-zinc-950">
-    <div class="max-w-5xl mx-auto px-8">
-      <h2 class="text-5xl font-semibold text-center mb-16">HOW TO JOIN THE EVENT</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-zinc-900 p-10 rounded-3xl border border-zinc-800">
-          <div class="text-5xl mb-6">01</div>
-          <h3 class="text-2xl font-semibold mb-3">Follow on TikTok</h3>
-          <p class="text-zinc-400">@eriellebancolita and @mamagad</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" data-text="MWB">
+                <span class="logo-icon">⚔</span>
+                <span class="logo-text">MWB</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-page="home">
+                        <span class="nav-num">01</span>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#event" class="nav-link" data-page="event">
+                        <span class="nav-num">02</span>Event
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#clan" class="nav-link" data-page="clan">
+                        <span class="nav-num">03</span>Clan
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#apply" class="nav-link" data-page="apply">
+                        <span class="nav-num">04</span>Apply
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-        <div class="bg-zinc-900 p-10 rounded-3xl border border-zinc-800">
-          <div class="text-5xl mb-6">02</div>
-          <h3 class="text-2xl font-semibold mb-3">Comment on the Post</h3>
-          <p class="text-zinc-400">"How to join Daddy Ejhay"</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="nav-progress"></div>
+    </nav>
 
-  <!-- How to Join Clan - Updated Form with Email -->
-  <section id="how-to-join-clan" class="py-28 bg-black">
-    <div class="max-w-7xl mx-auto px-8">
-      <h2 class="text-5xl font-semibold text-center mb-16 tracking-tight">HOW TO JOIN THE CLAN IN MWB</h2>
-
-      <div class="grid lg:grid-cols-2 gap-16">
-
-        <!-- Step 1: TikTok Accounts -->
-        <div>
-          <h3 class="text-3xl font-semibold mb-10 text-zinc-100">Step 1: Follow These Accounts</h3>
-          <div class="space-y-8">
-            <div class="glass-card p-8 rounded-3xl group hover:scale-[1.02] transition-all duration-500 border border-zinc-700 hover:border-zinc-400">
-              <div class="flex items-start gap-5">
-                <div class="w-14 h-14 bg-zinc-800 rounded-2xl flex items-center justify-center text-4xl flex-shrink-0">📱</div>
-                <div class="flex-1">
-                  <p class="text-xl font-semibold text-white">Erielle Bancolita</p>
-                  <p class="text-zinc-500">@eriellebancolita</p>
-                  <a href="https://www.tiktok.com/@eriellebancolita" target="_blank"
-                     class="mt-6 inline-flex items-center justify-center w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-600 hover:border-red-500 py-4 rounded-2xl text-sm font-medium transition-all">
-                    FOLLOW ON TIKTOK
-                  </a>
+    <!-- Home Section -->
+    <section id="home" class="home-section page-section active">
+        <div class="home-container">
+            <div class="home-header" data-animate="fade-up">
+                <div class="rank-badge" data-animate="scale-in" data-delay="100">
+                    <span class="badge-star">★</span>
+                    <span class="badge-text">ELITE CLAN</span>
+                    <span class="badge-star">★</span>
                 </div>
-              </div>
+                <h1 data-animate="fade-up" data-delay="200">
+                    Welcome to the Home of <br>
+                    <span class="highlight glitch-text" data-text="MWB">MWB</span> | 
+                    <span class="highlight-alt">MgaWalangBitaw</span>
+                </h1>
+                <p class="home-subtitle" data-animate="fade-up" data-delay="300">Welcome to our official clan page! We are a community built on loyalty, skill, and mutual respect. To keep our environment competitive yet welcoming, all members are expected to uphold the following core principles:</p>
             </div>
 
-            <div class="glass-card p-8 rounded-3xl group hover:scale-[1.02] transition-all duration-500 border border-zinc-700 hover:border-zinc-400">
-              <div class="flex items-start gap-5">
-                <div class="w-14 h-14 bg-zinc-800 rounded-2xl flex items-center justify-center text-4xl flex-shrink-0">📱</div>
-                <div class="flex-1">
-                  <p class="text-xl font-semibold text-white">MAMCI • Partner Organizer</p>
-                  <p class="text-zinc-500">@mamagad</p>
-                  <a href="https://www.tiktok.com/@mamagad" target="_blank"
-                     class="mt-6 inline-flex items-center justify-center w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-600 hover:border-emerald-500 py-4 rounded-2xl text-sm font-medium transition-all">
-                    FOLLOW ON TIKTOK
-                  </a>
+            <div class="code-of-conduct" data-animate="fade-up" data-delay="200">
+                <h2><span class="section-icon">📋</span> The MWB Code of Conduct</h2>
+                <div class="rules-grid">
+                    <div class="rule-card" data-animate="slide-up" data-delay="100">
+                        <div class="rule-number">01</div>
+                        <div class="rule-icon">🛡️</div>
+                        <h3>Respect Each Other</h3>
+                        <p>Treat every clan mate with dignity. We win together and we learn together.</p>
+                        <div class="rule-line"></div>
+                    </div>
+                    <div class="rule-card" data-animate="slide-up" data-delay="200">
+                        <div class="rule-number">02</div>
+                        <div class="rule-icon">⚖️</div>
+                        <h3>No Streamsniping</h3>
+                        <p>Maintain the integrity of the game. We play fair and win on our own merit.</p>
+                        <div class="rule-line"></div>
+                    </div>
+                    <div class="rule-card" data-animate="slide-up" data-delay="300">
+                        <div class="rule-number">03</div>
+                        <div class="rule-icon">🤝</div>
+                        <h3>Support Each Other</h3>
+                        <p>Whether it's sharing loot, covering a flank, or giving advice, we always look out for our own.</p>
+                        <div class="rule-line"></div>
+                    </div>
+                    <div class="rule-card" data-animate="slide-up" data-delay="400">
+                        <div class="rule-number">04</div>
+                        <div class="rule-icon">👥</div>
+                        <h3>Play With Anyone</h3>
+                        <p>No one gets left behind. Be open to squading up with any member of the clan, regardless of rank or skill level.</p>
+                        <div class="rule-line"></div>
+                    </div>
+                    <div class="rule-card golden" data-animate="slide-up" data-delay="500">
+                        <div class="rule-number">05</div>
+                        <div class="rule-icon">👑</div>
+                        <h3>The Golden Rule</h3>
+                        <p>For all official clan matters, recruitments, or questions, always ask <strong>Mamci, </strong><strong>MWB_BNTY/MAMCI</strong>.</p>
+                        <div class="rule-line gold"></div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Step 2: Application Form with Email Field -->
-        <div>
-          <h3 class="text-3xl font-semibold mb-10 text-zinc-100">Step 2: Submit Your Application</h3>
-          
-          <div class="glass-card p-10 rounded-3xl border border-zinc-700">
-            <form id="clanForm" class="space-y-8">
-              <div>
-                <label class="block text-zinc-400 text-sm font-medium mb-2">Full Name</label>
-                <input type="text" name="full_name" required 
-                  class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl p-5 focus:border-red-500 outline-none">
-              </div>
-
-              <div>
-                <label class="block text-zinc-400 text-sm font-medium mb-2">Email Address</label>
-                <input type="email" name="user_email" required 
-                  class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl p-5 focus:border-red-500 outline-none">
-              </div>
-
-              <div>
-                <label class="block text-zinc-400 text-sm font-medium mb-2">1. Why do you want to join our clan?</label>
-                <textarea name="why_join" rows="4" required 
-                  class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl p-5 focus:border-red-500 outline-none resize-none"></textarea>
-              </div>
-
-              <div>
-                <label class="block text-zinc-400 text-sm font-medium mb-2">2. What can you bring to the team in MWB?</label>
-                <textarea name="what_bring" rows="4" required 
-                  class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl p-5 focus:border-red-500 outline-none resize-none"></textarea>
-              </div>
-
-              <div>
-                <label class="block text-zinc-400 text-sm font-medium mb-2">3. Do you have any other clan or squad?</label>
-                <input type="text" name="other_clan" required placeholder="Yes/No + Clan name if any"
-                  class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl p-5 focus:border-red-500 outline-none">
-              </div>
-
-              <div class="grid grid-cols-2 gap-8">
-                <div>
-                  <label class="block text-zinc-400 text-sm font-medium mb-3">4. Willing to use main account?</label>
-                  <div class="flex gap-6">
-                    <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="main_account" value="Yes" required> Yes</label>
-                    <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="main_account" value="No"> No</label>
-                  </div>
+            <div class="home-cta" data-animate="fade-up" data-delay="600">
+                <div class="cta-border">
+                    <div class="cta-corner cta-tl"></div>
+                    <div class="cta-corner cta-tr"></div>
+                    <div class="cta-corner cta-bl"></div>
+                    <div class="cta-corner cta-br"></div>
+                    <p class="cta-text">Think you have what it takes?</p>
+                    <h2 class="cta-heading">Stand your ground and never let go.</h2>
+                    <div class="hashtags">
+                        <span>#MWB</span>
+                        <span>#MgaWalangBitaw</span>
+                    </div>
                 </div>
-                <div>
-                  <label class="block text-zinc-400 text-sm font-medium mb-3">5. Will you stay loyal?</label>
-                  <div class="flex gap-6">
-                    <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="loyal" value="Yes" required> Yes</label>
-                    <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="loyal" value="No"> No</label>
-                  </div>
-                </div>
-              </div>
-
-              <button type="submit" id="submitBtn"
-                class="w-full btn-primary bg-red-600 hover:bg-red-700 py-7 text-xl font-semibold rounded-2xl transition-all duration-300">
-                SUBMIT APPLICATION
-              </button>
-            </form>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Clan Rules -->
-  <section class="py-28 bg-zinc-950">
-    <div class="max-w-4xl mx-auto px-8 text-center">
-      <h2 class="text-5xl font-semibold mb-12">CLAN RULES</h2>
-      <div class="grid md:grid-cols-2 gap-8 text-left">
-        <ul class="space-y-6">
-          <li class="flex gap-4 text-lg"><span class="text-emerald-400">✅</span> Respect every member of the clan at all times</li>
-          <li class="flex gap-4 text-lg"><span class="text-emerald-400">✅</span> Play with anyone who is open and available</li>
-          <li class="flex gap-4 text-lg"><span class="text-emerald-400">✅</span> Do not stream snipe</li>
-        </ul>
-        <ul class="space-y-6">
-          <li class="flex gap-4 text-lg"><span class="text-emerald-400">✅</span> Do not troll or sabotage your teammates</li>
-          <li class="flex gap-4 text-lg"><span class="text-emerald-400">✅</span> No backstabbing or betrayal</li>
-          <li class="flex gap-4 text-lg"><span class="text-emerald-400">✅</span> No snitching or leaking clan information</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <!-- Event Section -->
+    <section id="event" class="event-section page-section">
+        <div class="event-container">
+            <div class="event-badge" data-animate="scale-in">
+                <span class="live-dot"></span> LIVE EVENT
+            </div>
 
-  <footer class="bg-black py-12 text-center border-t border-red-900">
-    <p class="text-gray-500">© 2026 MgaWalangBitaw Giveaway • Organized by Erielle Bancolita & MAMCI</p>
-  </footer>
+            <div class="event-header" data-animate="fade-up" data-delay="100">
+                <h1>Red Magic 11 Air Showcase</h1>
+                <p class="event-intro">Get ready, MWB family! We are celebrating the power of the Red Magic 11 Air. To show what this beast can do in the Dark Zone, we're hosting a special content contest focused on the heart of our clan.</p>
+            </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="script.js"></script>
+            <div class="contest-card" data-animate="fade-up" data-delay="200">
+                <div class="contest-icon">🎬</div>
+                <h2>The "Clutch or Comedy" Clip Contest</h2>
+                <p class="contest-desc">We want to see your best moments from the field, but there's a catch—you have to be running with the leadership. We're looking for the most entertaining gameplay featuring <strong>MWB_BNTY/MAMCI</strong>, <strong>MAMCI</strong>, or <strong>both</strong>!</p>
+            </div>
+
+            <div class="challenge-grid">
+                <div class="challenge-card" data-animate="slide-right" data-delay="300">
+                    <div class="challenge-icon">⏱️</div>
+                    <h3>The Challenge</h3>
+                    <p>Submit a video clip between <strong>60 seconds and 180 seconds</strong> (1 to 3 minutes). We aren't just looking for high-tier loot extractions; we want the <strong>funny moments, the memes, and the chaotic squad wipes</strong>.</p>
+                </div>
+
+                <div class="challenge-card highlight" data-animate="slide-left" data-delay="400">
+                    <div class="challenge-icon">🎯</div>
+                    <h3>Core Requirement</h3>
+                    <p>Your clip <strong>must include</strong> gameplay with <span class="highlight-name">MWB_BNTY</span> or <span class="highlight-name">MAMCI</span>.</p>
+                    <p class="vibe-text">The Vibe: High energy, funny comms, or epic fails. If it makes everybody laugh, you're on the right track.</p>
+                </div>
+            </div>
+
+            <div class="goal-banner" data-animate="fade-up" data-delay="500">
+                <div class="goal-text">The Goal: The funniest, most creative clip wins the top spot!</div>
+            </div>
+
+            <div class="how-to-enter" data-animate="fade-up" data-delay="600">
+                <h3>📝 How to Enter & Win:</h3>
+                <div class="steps-grid">
+                    <div class="step-card" data-animate="slide-up" data-delay="100">
+                        <div class="step-num">1</div>
+                        <h4>Capture</h4>
+                        <p>Record your wildest raids in <em>Arena Breakout</em> while playing with BNTY or MAMCI.</p>
+                    </div>
+                    <div class="step-card" data-animate="slide-up" data-delay="200">
+                        <div class="step-num">2</div>
+                        <h4>Edit</h4>
+                        <p>Keep it between 60–180 seconds. Add your favorite memes or sound effects to level up the comedy.</p>
+                    </div>
+                    <div class="step-card" data-animate="slide-up" data-delay="300">
+                        <div class="step-num">3</div>
+                        <h4>Engage</h4>
+                        <p>Upload your clip to the TIKTOK.</p>
+                    </div>
+                    <div class="step-card" data-animate="slide-up" data-delay="400">
+                        <div class="step-num">4</div>
+                        <h4>Boost</h4>
+                        <p>This event is all about the community. <strong>More Likes, Shares, and Comments</strong> on your video increase your visibility!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-note" data-animate="fade-up" data-delay="700">
+                <blockquote>
+                    Note: As always, if you have questions about submission formats or event timing, always ask <strong>Mamci</strong> or <strong>BNTY</strong>.
+                </blockquote>
+            </div>
+
+            <div class="event-cta" data-animate="fade-up" data-delay="800">
+                <h2>Show us that MWB spirit—let's see who really runs the Dark Zone!</h2>
+                <div class="hashtags">
+                    <span>#MWB</span>
+                    <span>#RedMagic11Air</span>
+                    <span>#ArenaBreakout</span>
+                    <span>#MgaWalangBitaw</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clan Section -->
+    <section id="clan" class="clan-section page-section">
+        <div class="clan-container">
+            <div class="clan-hero" data-animate="fade-up">
+                <span class="section-label">Our Story</span>
+                <h1>The Heart of <span class="highlight">MWB</span> | <span class="highlight">MgaWalangBitaw</span></h1>
+                <p class="clan-intro">Every legend has a beginning. What started as a small, dedicated team has evolved into a movement. <strong>MWB (MgaWalangBitaw)</strong> was forged in the heat of the Dark Zone, built on the simple idea that no operator should ever have to stand alone. Today, we are opening our doors to the entire <em>Arena Breakout Mobile</em> community.</p>
+            </div>
+
+            <div class="mission-section" data-animate="fade-up" data-delay="150">
+                <div class="mission-header">
+                    <h2>Our Mission: <span class="mission-highlight">Build.</span> <span class="mission-highlight">Support.</span> <span class="mission-highlight">Lead.</span></h2>
+                </div>
+                <p class="mission-desc">We are more than just a clan; we are a community dedicated to keeping the spirit of <em>Arena Breakout</em> alive and thriving. Whether you are a <strong>seasoned Pro</strong> with a stash full of high-tier loot or a <strong>Newbie</strong> just trying to survive your first extraction, there is a place for you here.</p>
+
+                <div class="mission-pillars">
+                    <div class="pillar-card" data-animate="slide-right" data-delay="200">
+                        <div class="pillar-icon">🌉</div>
+                        <h3>Bridge the Gap</h3>
+                        <p>We bring new players and veterans together to share knowledge, tactics, and victories.</p>
+                    </div>
+                    <div class="pillar-card" data-animate="slide-up" data-delay="300">
+                        <div class="pillar-icon">🎥</div>
+                        <h3>A Content Creator Hub</h3>
+                        <p>We are actively seeking and supporting streamers and content creators. We provide the foundation for you to start your journey, grow your audience, and showcase the intensity of the game.</p>
+                    </div>
+                    <div class="pillar-card" data-animate="slide-left" data-delay="400">
+                        <div class="pillar-icon">🚀</div>
+                        <h3>Grow the Game</h3>
+                        <p>Our goal is to make <em>Arena Breakout Mobile</em> more vibrant than ever, inviting players from all over the world to see why this is the ultimate tactical extraction shooter.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="why-join-section" data-animate="fade-up" data-delay="200">
+                <blockquote class="clan-quote">
+                    "In MWB, we don't just play the game—we build the future of it."
+                </blockquote>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card" data-animate="slide-up" data-delay="100">
+                        <div class="benefit-icon">📈</div>
+                        <h3>Growth & Mentorship</h3>
+                        <p>Get help with builds, map knowledge, and tactical execution from experienced members.</p>
+                    </div>
+                    <div class="benefit-card" data-animate="slide-up" data-delay="200">
+                        <div class="benefit-icon">🎬</div>
+                        <h3>A Content-First Culture</h3>
+                        <p>Collaborate with other streamers and get featured in our clan events and highlight reels.</p>
+                    </div>
+                    <div class="benefit-card" data-animate="slide-up" data-delay="300">
+                        <div class="benefit-icon">🤝</div>
+                        <h3>Loyalty & Respect</h3>
+                        <p>Experience a toxic-free environment where the only thing we care about is the strength of the team and the fun of the raid.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="join-cta" data-animate="fade-up" data-delay="300">
+                <h2>Ready to Join the Ranks?</h2>
+                <p class="join-desc">We are looking for players who are ready to contribute, creators who are ready to inspire, and teammates who never let go. If you're ready to help us make <em>Arena Breakout</em> the top destination for mobile gaming, your journey starts here.</p>
+
+                <div class="join-action">
+                    <p class="join-callout">Connect with us today and help us build the strongest community in the Zone.</p>
+                    <div class="mamci-note">
+                        <span class="note-icon">📌</span>
+                        <p>For recruitment inquiries and official onboarding, <strong>always ask Mamci</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="hashtags">
+                    <span>#MWB</span>
+                    <span>#MgaWalangBitaw</span>
+                    <span>#ArenaBreakoutMobile</span>
+                    <span>#JoinTheEvolution</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section - NEW RECRUITMENT DESIGN -->
+    <section id="apply" class="apply-section page-section">
+        <div class="apply-container">
+            <div class="apply-hero" data-animate="fade-up">
+                <span class="section-label">Recruitment</span>
+                <h1>How to Join the Ranks of <span class="highlight">MWB</span> | <span class="highlight">MgaWalangBitaw</span></h1>
+                <p class="apply-intro">Ready to represent the clan? We are looking for dedicated players and creators who are proud to wear the MWB tag. Follow the steps below to officially start your application process.</p>
+            </div>
+
+            <!-- Step 1: Reach Out -->
+            <div class="recruit-step" data-animate="fade-up" data-delay="100">
+                <div class="step-header">
+                    <div class="step-badge">
+                        <span class="step-badge-num">01</span>
+                        <div class="step-badge-ring"></div>
+                    </div>
+                    <h2>Reach Out</h2>
+                </div>
+                <div class="step-content">
+                    <p>To begin your journey, you must first send a personal message to our leadership. Reach out to <strong class="leader-name">MAMCI</strong> or <strong class="leader-name">MWB_BNTY/MAMCI</strong> directly via <span class="platform-tag">TikTok</span>.</p>
+                    <div class="pro-tip">
+                        <div class="tip-icon">💡</div>
+                        <div class="tip-content">
+                            <strong>Pro Tip:</strong> Introduce yourself, share your playstyle, and let them know why you want to join the MWB community!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Establish Your Identity -->
+            <div class="recruit-step" data-animate="fade-up" data-delay="200">
+                <div class="step-header">
+                    <div class="step-badge">
+                        <span class="step-badge-num">02</span>
+                        <div class="step-badge-ring"></div>
+                    </div>
+                    <h2>Establish Your Identity</h2>
+                </div>
+                <div class="step-content">
+                    <p>We move as one team, and that starts with our branding. All official members are required to update their profiles to show their clan loyalty:</p>
+                    <div class="identity-cards">
+                        <div class="identity-card" data-animate="slide-right" data-delay="100">
+                            <div class="id-icon">📱</div>
+                            <h4>TikTok Profile</h4>
+                            <p>Update your display name on TikTok to include the clan prefix.</p>
+                        </div>
+                        <div class="identity-card" data-animate="slide-left" data-delay="200">
+                            <div class="id-icon">🎮</div>
+                            <h4>In-Game Name (IGN)</h4>
+                            <p>Change your Arena Breakout Mobile name to reflect your membership.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Naming Convention -->
+            <div class="naming-convention" data-animate="fade-up" data-delay="300">
+                <div class="nc-header">
+                    <div class="nc-icon">🏷️</div>
+                    <h3>Naming Convention Requirements</h3>
+                </div>
+                <p class="nc-desc">To maintain a professional and unified look, your name must follow this specific format:</p>
+                <div class="nc-format">
+                    <div class="nc-prefix">MWB_</div>
+                    <div class="nc-separator"></div>
+                    <div class="nc-name">YOURNAMEALLCAPITAL</div>
+                </div>
+                <div class="nc-example">
+                    <span class="nc-label">Example:</span>
+                    <span class="nc-example-text">If your name is <strong>Ace</strong>, your new name should be <span class="nc-highlight">MWB_ACE</span></span>
+                </div>
+                <div class="nc-note">
+                    <span class="nc-note-icon">⚠️</span>
+                    <span>Ensure the prefix is in <strong>uppercase</strong> and followed by an <strong>underscore</strong>.</span>
+                </div>
+            </div>
+
+            <!-- Finalizing -->
+            <div class="finalizing" data-animate="fade-up" data-delay="400">
+                <div class="final-header">
+                    <div class="final-badge">
+                        <span class="final-badge-text">FINAL STEP</span>
+                        <div class="final-pulse"></div>
+                    </div>
+                    <h2>Finalizing Your Application</h2>
+                </div>
+                <div class="final-content">
+                    <p>Once you have updated your names, confirm with <strong>Mamci</strong> to complete your onboarding. Joining MWB means more than just a name change—it means joining a brotherhood that supports your growth as a player and a creator.</p>
+                    <div class="final-cta">
+                        <div class="final-quote">
+                            <span class="quote-mark">"</span>
+                            Stand tall, gear up, and welcome to the family.
+                            <span class="quote-mark">"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apply Footer Hashtags -->
+            <div class="apply-footer" data-animate="fade-up" data-delay="500">
+                <div class="hashtags">
+                    <span>#MWB</span>
+                    <span>#MgaWalangBitaw</span>
+                    <span>#ArenaBreakoutMobile</span>
+                    <span>#ClanRecruitment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">MWB</div>
+            <p class="footer-tagline">MgaWalangBitaw — Never Let Go</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">© 2026 MWB | MgaWalangBitaw. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
